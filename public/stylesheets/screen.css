@@ -1,0 +1,230 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 1, ../sass/_home.scss */
+body {
+  background-color: antiquewhite;
+}
+
+/* -----start navbar----- */
+/* line 8, ../sass/_home.scss */
+.navbar {
+  border-radius: 0px;
+}
+
+/* line 11, ../sass/_home.scss */
+.navbar-inverse {
+  background-color: #000000;
+  border-color: #080808;
+  font-family: 'Cantarell';
+}
+/* line 16, ../sass/_home.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+/* line 19, ../sass/_home.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: lightblue;
+}
+
+/* line 25, ../sass/_home.scss */
+.dropdown-menu {
+  background-color: #000000;
+}
+/* line 28, ../sass/_home.scss */
+.dropdown-menu li > a:hover {
+  color: lightblue !important;
+  background-color: #000000;
+}
+
+/* line 35, ../sass/_home.scss */
+.navbar-brand {
+  border-radius: 25px;
+  animation: myfirst 3s;
+  color: white !important;
+  font-family: 'Tangerine', serif;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #aaa;
+  -moz-animation: myfirst 3s infinite;
+  /* Firefox */
+  -webkit-animation: myfirst 3s infinite;
+  /* Safari and Chrome */
+}
+@-webkit-keyframes myfirst /* Firefox */ {
+  0% {
+    box-shadow: 2px 2px 2px white;
+  }
+  25% {
+    box-shadow: 4px 4px 4px white;
+  }
+  50% {
+    box-shadow: 6px 6px 6px white;
+  }
+  75% {
+    box-shadow: 4px 4px 4px white;
+  }
+  110% {
+    box-shadow: 2px 2px 2px white;
+  }
+}
+/* line 55, ../sass/_home.scss */
+.dropdown-menu li > a {
+  color: white !important;
+  font-family: 'Cantarell';
+}
+
+/* -----end navbar----- */
+/* line 64, ../sass/_home.scss */
+body p {
+  font-family: monospace;
+}
+
+/* line 69, ../sass/_home.scss */
+.size {
+  width: 300px;
+  height: 300px;
+  border-bottom: 2px solid gray;
+  border-right: 1px solid gray;
+}
+
+/* line 76, ../sass/_home.scss */
+.Tangerine {
+  font-family: 'Tangerine', serif;
+  font-size: 28px;
+  text-shadow: 1px 0px 0px red;
+}
+
+/* line 82, ../sass/_home.scss */
+.Cantarell {
+  font-family: 'Cantarell', serif;
+  font-size: 26px;
+  text-shadow: 1px 0px 0px gray;
+}
+
+/* line 88, ../sass/_home.scss */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+/* line 98, ../sass/_home.scss */
+.size {
+  width: 100%;
+  height: 200px;
+}
+
+/*BEGIN max and min width 992px*/
+/*BEGIN max and min width 940px*/
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 768px) {
+  /* line 124, ../sass/_home.scss */
+  .size {
+    width: 100%;
+    height: 150px;
+  }
+
+  /* line 128, ../sass/_home.scss */
+  .Tangerine {
+    font-family: 'Tangerine', serif;
+    font-size: 22px;
+    text-shadow: 0px 0px 0px red;
+  }
+
+  /* line 133, ../sass/_home.scss */
+  .Cantarell {
+    font-family: 'Cantarell', serif;
+    font-size: 12px;
+    text-shadow: 1px 0px 0px gray;
+  }
+}
+/*BEGIN max and min width 320px*/
+@media (max-width: 320px) {
+  /* line 148, ../sass/_home.scss */
+  .size {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* line 152, ../sass/_home.scss */
+  .text1 {
+    font-size: 10px;
+    font-family: 'Cantarell';
+  }
+
+  /* line 156, ../sass/_home.scss */
+  .Tangerine {
+    font-family: 'Tangerine', serif;
+    font-size: 19px;
+    text-shadow: 0px 0px 0px gray;
+  }
+}
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
